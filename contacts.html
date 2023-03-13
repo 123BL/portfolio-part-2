@@ -35,7 +35,7 @@
         }
       </style>
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Brandon Lu</a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo_design-removebg-preview.png" id="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -60,25 +60,42 @@
       </div>
     </nav>
     <br>
-    <h1>Contacts</h1>
-  <h2>These are my socials if you want to contact me at anytime.</h2>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img src="images/instagram.png">
-        <h2>brandonlu772</h2>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img src="images/googlemail.png">
-        <h2>brandonlulu948@gmail.com</h2>
-      </div>
-    </div>
-  </div>
+   <!-- contact section-->
+   <section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1> 
+              <div class="row mt-4">
+                  <div class="col-lg-6">
+                      <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                      <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                          <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                              <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=6+Royal+Road,+Freehold,+NJ,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                              </iframe>
+                          </div>
+                          <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                          <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                          </style>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-6">
+                      <!-- form fields -->
+                      <form>
+                          <input type="text" class="form-control form-control-lg" placeholder="Name">
+                          <input type="email" class="form-control mt-3" placeholder="Email">
+                          <input type="text" class="form-control mt-3" placeholder="Subject">
+                          <div class="mb-3 mt-3">
+                              <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                          </div>
+                      </form>
+                      <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                      
+                  </div>
+  
+              </div>
+          </div>
+      </section>
   <script src="script.js"></script>
 </html>
+
+
